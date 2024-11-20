@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.containers{
+    display: flex;
+    justify-content: space-around;
+align-items: center;
+    width: 100%;
+    height: 600px;
+}
+
+.mabox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px black;
+    width: 200px;
+    height: 200px;
+    filter: blur(2px);
+}
+
+.maboxnrml{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px red;
+    width: 200px;
+    height: 200px;
+}
+
+
+.maboxnrmlgrande{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px red;
+    width: 400px;
+    height: 200px;
+}
