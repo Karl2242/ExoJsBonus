@@ -1,0 +1,77 @@
+
+
+.button{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 2%;
+    background-color: #4CAF50; /* Vert */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 10px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.button::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: '→';
+    position: absolute;
+    right: 20px;
+    font-size: 18px;
+    transform: translateX(10px);
+    transition: all 0.3s ease;
+}
+
+
+.button-retour{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 2%;
+    background-color: #4CAF50; /* Vert */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 10px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.button-retour::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: '←';
+    position: absolute;
+    right: 20px;
+    font-size: 18px;
+    transform: translateX(10px);
+    transition: all 0.3s ease;
+}
+
+
+
+.containers{
+    width: 100%;
+    height: 700px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.tailleimg{
+    width: 40%;
+}
