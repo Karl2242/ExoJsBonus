@@ -1,6 +1,6 @@
 let nextButton = document.getElementById("nextbutton")
 let beforeButton = document.getElementById("beforebutton")
-let mesImage = ["./images/asc.jpg", "./images/nadirleplusbo.png", "./images/chillguy.jpg"]
+let mesImage = ["./images/chillguy.jpg","./images/asc.jpg", "./images/nadirleplusbo.png"]
 let imgbase = document.getElementById("limg")
 let count = 0;
 
@@ -10,33 +10,20 @@ nextButton.addEventListener("click", nextButtonNewImage)
 
 
 function nextButtonNewImage(){
-
-count = count + 1
-
-for(let i = 0; i < count; i++){
-    console.log(i)
-        imgbase.src = mesImage[i]
+if(count === mesImage.length - 1){
+count = 0;
+} else{
+    count += 1
 }
-
-if(count >= 3){
-    count = 0
+imgbase.src= mesImage[count]
 }
-}
-
 
 function buttonBeforeImg(){
-
-    count = count + 1
-
-for(let i = 3; i > count; i--){
-    console.log(i)
-        imgbase.src = mesImage[i]
-}
-
-if(count >= 0){
-    count = 3
-}
-
-
-}
-
+    if(count === 0){
+    count = 2;
+    } else{
+        count -= 1
+    }
+    imgbase.src= mesImage[count]
+    }
+    
